@@ -1,0 +1,11 @@
+framework module ImageMeasureFramework {
+  umbrella header "ImageMeasureFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module ImageMeasureFramework.Swift {
+    header "ImageMeasureFramework-Swift.h"
+    requires objc
+}

@@ -7,15 +7,33 @@
 //
 
 import UIKit
+import ImageMeasureFramework
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    var vv: ImageMeasureViewController? = nil
 
+    private func createImageMeasureViewController() -> ImageMeasureViewController {
+      print("createImageMeasureViewController")
+      let storyboard = UIStoryboard(name: "measure", bundle: MeasureUtils.getBundle(bundleName:  "ImageMeasureResourceBundle"))
+        self.vv = storyboard.instantiateViewController(withIdentifier: "ImageMeasureViewController") as! ImageMeasureViewController
+        self.vv!.modalPresentationStyle = .fullScreen
+      //self.vv!.modalTransitionStyle = .crossDissolve
+      //imageMeasureViewController.navigator = self.navigator
+      return self.vv!
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        Util.copyFile(fileName: "Patient.sqlite")
+        /*
+        self.window = UIWindow()
+        window?.rootViewController = createImageMeasureViewController()
+        window?.makeKeyAndVisible()
+ */
         return true
     }
 
