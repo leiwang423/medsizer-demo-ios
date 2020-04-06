@@ -55,7 +55,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9B253AA822792405004A254A /* hello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hello.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B253AA822792405004A254A /* IMF-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IMF-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B253AAB22792405004A254A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B253AAD22792405004A254A /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		9B253AB022792405004A254A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				9B256102243984ED00787530 /* IMF-release */,
-				9B253AAA22792405004A254A /* hello */,
+				9B253AAA22792405004A254A /* IMFDemoApp */,
 				9B253AA922792405004A254A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,12 +108,12 @@
 		9B253AA922792405004A254A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9B253AA822792405004A254A /* hello.app */,
+				9B253AA822792405004A254A /* IMF-demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9B253AAA22792405004A254A /* hello */ = {
+		9B253AAA22792405004A254A /* IMFDemoApp */ = {
 			isa = PBXGroup;
 			children = (
 				9B253AAB22792405004A254A /* AppDelegate.swift */,
@@ -124,7 +124,7 @@
 				9B253AB422792406004A254A /* LaunchScreen.storyboard */,
 				9B253AB722792406004A254A /* Info.plist */,
 			);
-			path = hello;
+			path = IMFDemoApp;
 			sourceTree = "<group>";
 		};
 		9B2561012439847200787530 /* demoviews */ = {
@@ -191,9 +191,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9B253AA722792405004A254A /* hello */ = {
+		9B253AA722792405004A254A /* IMF-demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9B253AD022792406004A254A /* Build configuration list for PBXNativeTarget "hello" */;
+			buildConfigurationList = 9B253AD022792406004A254A /* Build configuration list for PBXNativeTarget "IMF-demo" */;
 			buildPhases = (
 				9B253AA422792405004A254A /* Sources */,
 				9B253AA522792405004A254A /* Frameworks */,
@@ -204,9 +204,9 @@
 			);
 			dependencies = (
 			);
-			name = hello;
+			name = "IMF-demo";
 			productName = hello;
-			productReference = 9B253AA822792405004A254A /* hello.app */;
+			productReference = 9B253AA822792405004A254A /* IMF-demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -224,7 +224,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9B253AA322792404004A254A /* Build configuration list for PBXProject "hello" */;
+			buildConfigurationList = 9B253AA322792404004A254A /* Build configuration list for PBXProject "IMF-demo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -237,7 +237,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9B253AA722792405004A254A /* hello */,
+				9B253AA722792405004A254A /* IMF-demo */,
 			);
 		};
 /* End PBXProject section */
@@ -436,7 +436,7 @@
 					"$(PROJECT_DIR)/IMF-release/NewPopMenu",
 					"$(PROJECT_DIR)/IMF-release/YALSideMenu",
 				);
-				INFOPLIST_FILE = hello/Info.plist;
+				INFOPLIST_FILE = IMFDemoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -472,7 +472,7 @@
 					"$(PROJECT_DIR)/IMF-release/NewPopMenu",
 					"$(PROJECT_DIR)/IMF-release/YALSideMenu",
 				);
-				INFOPLIST_FILE = hello/Info.plist;
+				INFOPLIST_FILE = IMFDemoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -487,7 +487,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9B253AA322792404004A254A /* Build configuration list for PBXProject "hello" */ = {
+		9B253AA322792404004A254A /* Build configuration list for PBXProject "IMF-demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9B253ACE22792406004A254A /* Debug */,
@@ -496,7 +496,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9B253AD022792406004A254A /* Build configuration list for PBXNativeTarget "hello" */ = {
+		9B253AD022792406004A254A /* Build configuration list for PBXNativeTarget "IMF-demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9B253AD122792406004A254A /* Debug */,

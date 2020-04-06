@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9B253AA722792405004A254A"
-               BuildableName = "hello.app"
-               BlueprintName = "hello"
-               ReferencedContainer = "container:hello.xcodeproj">
+               BuildableName = "IMF-demo.app"
+               BlueprintName = "IMF-demo"
+               ReferencedContainer = "container:IMF-demo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "9B253ABB22792406004A254A"
                BuildableName = "helloTests.xctest"
                BlueprintName = "helloTests"
-               ReferencedContainer = "container:hello.xcodeproj">
+               ReferencedContainer = "container:IMF-demo.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -45,7 +45,7 @@
                BlueprintIdentifier = "9B253AC622792406004A254A"
                BuildableName = "helloUITests.xctest"
                BlueprintName = "helloUITests"
-               ReferencedContainer = "container:hello.xcodeproj">
+               ReferencedContainer = "container:IMF-demo.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -65,9 +65,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9B253AA722792405004A254A"
-            BuildableName = "hello.app"
-            BlueprintName = "hello"
-            ReferencedContainer = "container:hello.xcodeproj">
+            BuildableName = "IMF-demo.app"
+            BlueprintName = "IMF-demo"
+            ReferencedContainer = "container:IMF-demo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -82,9 +82,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9B253AA722792405004A254A"
-            BuildableName = "hello.app"
-            BlueprintName = "hello"
-            ReferencedContainer = "container:hello.xcodeproj">
+            BuildableName = "IMF-demo.app"
+            BlueprintName = "IMF-demo"
+            ReferencedContainer = "container:IMF-demo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
