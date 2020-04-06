@@ -6,15 +6,15 @@
 	<dict>
 		<key>EmojiCollectionViewCell.nib/objects-12.3+.nib</key>
 		<data>
-		1JMtOUXvs2+EfKWPJi3NhlvMpXM=
+		vbWi8dotRvqO1tSJjDg8+wlRaLQ=
 		</data>
 		<key>EmojiCollectionViewCell.nib/objects-13.0+.nib</key>
 		<data>
-		TBATgF15bLx/RvVBzTJHTKoUbDw=
+		HccUbfslBnYY+jdWasyTgtCJJ2s=
 		</data>
 		<key>EmojiCollectionViewCell.nib/runtime.nib</key>
 		<data>
-		RdqJGEnbmvRQvQmB9tRtolLNktQ=
+		miK2axzpgI38DcTS5Kn1f7X0HOE=
 		</data>
 		<key>Headers/FMDatabase.h</key>
 		<data>
@@ -62,23 +62,23 @@
 		</data>
 		<key>StickerCollectionViewCell.nib/objects-12.3+.nib</key>
 		<data>
-		yLrZi4uB2AMzBIifXpr97oClf44=
+		ziufELAFYFv/RsAF3imnqLSk2jw=
 		</data>
 		<key>StickerCollectionViewCell.nib/objects-13.0+.nib</key>
 		<data>
-		9CLeK298VnwSSrlG2aLmxVtlvPc=
+		DVK+kx7T/qAXj89W5woRftSQSKA=
 		</data>
 		<key>StickerCollectionViewCell.nib/runtime.nib</key>
 		<data>
-		1sD6p49GU+XyCVI1gYB5aas73rg=
+		1Ws+ZoNQ4pI5OcUwRm5cAdCuyso=
 		</data>
 		<key>StickersViewController.nib/objects-13.0+.nib</key>
 		<data>
-		qfrthp8PXtOm2WTpqSGbqkatV+Q=
+		bQO0f0Ts1l7XD8wBbtVvN8zMQIg=
 		</data>
 		<key>StickersViewController.nib/runtime.nib</key>
 		<data>
-		B0x35CHVf4rrQvILDu0Xpd77bJ0=
+		YTz3ro6YelOIokNMwiXnqf7G3X8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -87,21 +87,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			da2vXYBpbLz32M1TJ+FBd9p3cRkrhCsN2TWciTtIclU=
+			/kzmRTVLHnlW2YGjomKg7O9rMOHHkVlbjNlGTJx0ovA=
 			</data>
 		</dict>
 		<key>EmojiCollectionViewCell.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OwdilFa0/4L+Dm5JaSkr+VxqZFoh14VqUKBnwMpEYzA=
+			lxTUcCaqtVs4edNyoc9do1Cng/udCGQ6ib+ZkUYgkiQ=
 			</data>
 		</dict>
 		<key>EmojiCollectionViewCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			o8lHSs3L0WEKvRtII6+sxOnCGpDf+KToScQow7P0jxs=
+			vcS/cObHHE4bSyG31GTSMlvrg3E37LcI0RM7SQIFOKw=
 			</data>
 		</dict>
 		<key>Headers/FMDatabase.h</key>
@@ -178,35 +178,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wt+KCX3uuR6RWBKV5sR1kB3pcgUt8/dSbHp8pA2lDD4=
+			fNcla6Y/lZjIjwnIq2RVXeOSassmHoJLH5EQJF5wcj4=
 			</data>
 		</dict>
 		<key>StickerCollectionViewCell.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FyPKvslKETwtLAykbbfFjT16KctoiHkjtO9UkweXlsc=
+			hCeXzE5TxS38S9rHdsSFoK/g65JLJUMWT0dRy73XGWg=
 			</data>
 		</dict>
 		<key>StickerCollectionViewCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dc1mz10s4CCr/ShRvEs6leNsB7S2Namf/Mg/JVF7gpA=
+			XpoSOaoD4p79VV0gnOQz1Gg+kTRZsv5ohT2BgUm6+T0=
 			</data>
 		</dict>
 		<key>StickersViewController.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			N7J+vdSfPvbUkGfwH46RgWzgmbs99uI2xFE1J9RUmKU=
+			Y45pd3Z/B4rbefWMbEVhE9GPw9FQtgKt4btgeJZ09LE=
 			</data>
 		</dict>
 		<key>StickersViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VqcOlueLlCCG1WxBL0SqNmHrn9veTvJycWBeCHwWuFY=
+			/XsWMT34f5ss1E6df0K0xDqnU5YRH5ZxjB6F5KarTLA=
 			</data>
 		</dict>
 	</dict>
