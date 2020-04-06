@@ -1,8 +1,8 @@
 1. Copy folder `IMF-release` to your xcode project folder
 2. Click `Add files to project` in Xcode, select and add the whole folder `IMF-release`.
-   You will see some new items content added in `build phases`: link binary and copy bundle resource.
+   You will see some new items content added in `build phases`: `link binary` and `copy bundle resource`.
 3. In Xcode, select `target->general->Embedded content`, change flag to `embed & sign`
 4. Add privacy settings in `info.plist` of your app
-    Privacy- camera usage description
-    Privacy- photo library usage description
-5. Refer to ViewController.swift in IMF-demo app, to learn about how to call ImageMeasureViewController
+    `Privacy- camera usage description`
+    `Privacy- photo library usage description`
+5. Refer to `ViewController.swift` in IMF-demo app, to learn about how to call `ImageMeasureViewController`
