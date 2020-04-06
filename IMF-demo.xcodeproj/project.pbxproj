@@ -25,8 +25,6 @@
 		9B256120243984F400787530 /* Gallery.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9B256106243984ED00787530 /* Gallery.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9B256121243984F500787530 /* ImageMeasureFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B25610F243984ED00787530 /* ImageMeasureFramework.framework */; };
 		9B256122243984F600787530 /* ImageMeasureFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9B25610F243984ED00787530 /* ImageMeasureFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9B256123243984F700787530 /* Pods_ImageMeasureFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B25610B243984ED00787530 /* Pods_ImageMeasureFramework.framework */; };
-		9B256124243984F700787530 /* Pods_ImageMeasureFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9B25610B243984ED00787530 /* Pods_ImageMeasureFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9B256125243984F900787530 /* PopMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B25610D243984ED00787530 /* PopMenu.framework */; };
 		9B256126243984F900787530 /* PopMenu.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9B25610D243984ED00787530 /* PopMenu.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9B256127243984FA00787530 /* SideMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B256112243984ED00787530 /* SideMenu.framework */; };
@@ -46,7 +44,6 @@
 				9B256128243984FA00787530 /* SideMenu.framework in Embed Frameworks */,
 				9B256126243984F900787530 /* PopMenu.framework in Embed Frameworks */,
 				9B25612A243984FB00787530 /* SnapKit.framework in Embed Frameworks */,
-				9B256124243984F700787530 /* Pods_ImageMeasureFramework.framework in Embed Frameworks */,
 				9B256120243984F400787530 /* Gallery.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -71,7 +68,6 @@
 		9B256108243984ED00787530 /* SnapKit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = SnapKit.framework.dSYM; sourceTree = "<group>"; };
 		9B256109243984ED00787530 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SnapKit.framework; sourceTree = "<group>"; };
 		9B25610A243984ED00787530 /* ImageMeasureFramework.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = ImageMeasureFramework.framework.dSYM; sourceTree = "<group>"; };
-		9B25610B243984ED00787530 /* Pods_ImageMeasureFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pods_ImageMeasureFramework.framework; sourceTree = "<group>"; };
 		9B25610D243984ED00787530 /* PopMenu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PopMenu.framework; sourceTree = "<group>"; };
 		9B25610E243984ED00787530 /* PopMenu.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = PopMenu.framework.dSYM; sourceTree = "<group>"; };
 		9B25610F243984ED00787530 /* ImageMeasureFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ImageMeasureFramework.framework; sourceTree = "<group>"; };
@@ -89,7 +85,6 @@
 				9B25611F243984F400787530 /* Gallery.framework in Frameworks */,
 				9B256129243984FB00787530 /* SnapKit.framework in Frameworks */,
 				9B256121243984F500787530 /* ImageMeasureFramework.framework in Frameworks */,
-				9B256123243984F700787530 /* Pods_ImageMeasureFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +139,6 @@
 				9B256104243984ED00787530 /* Gallery */,
 				9B256107243984ED00787530 /* SnapKit */,
 				9B25610A243984ED00787530 /* ImageMeasureFramework.framework.dSYM */,
-				9B25610B243984ED00787530 /* Pods_ImageMeasureFramework.framework */,
 				9B25610C243984ED00787530 /* NewPopMenu */,
 				9B25610F243984ED00787530 /* ImageMeasureFramework.framework */,
 				9B256110243984ED00787530 /* YALSideMenu */,
