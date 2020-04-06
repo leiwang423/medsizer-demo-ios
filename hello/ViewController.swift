@@ -39,6 +39,7 @@ class ViewController: SideMenuTransitionAnimatorViewController {
 
   private func createImageMeasureViewController() -> ImageMeasureViewController {
     print("createImageMeasureViewController")
+    Util.copyFile(fileName: "Patient.sqlite")
     let storyboard = UIStoryboard(name: "measure", bundle: MeasureUtils.getBundle(bundleName:  "ImageMeasureResourceBundle"))
     self.imageMeasureViewController = storyboard.instantiateViewController(withIdentifier: "ImageMeasureViewController") as! ImageMeasureViewController
     self.imageMeasureViewController!.modalPresentationStyle = .popover
