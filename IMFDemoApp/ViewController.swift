@@ -50,13 +50,17 @@ class ViewController: SideMenuTransitionAnimatorViewController {
 }
 
 extension ViewController : ImageMeasureProtocol {
+  // received measurement data list from IMF
   func saveMeasureMentData(data: MeasurementDataList) {
     print("ImageMeasureProtocol::saveMeasureMentData")
   }
+  // provide patient info to IMF
   func getPatientInfo() -> PatientInfo {
     print("ImageMeasureProtocol::getPatientInfo")
+    // by default, generate and return an empty PatientInfo object.
     return self.imageMeasureViewController!.generatePatientInfo()
   }
+  // provide template list to IMF
   func getTemplateIndex() -> [Template] {
     print("ImageMeasureProtocol::getTemplateIndex")
     return []
