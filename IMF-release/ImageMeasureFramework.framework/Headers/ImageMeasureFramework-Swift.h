@@ -270,7 +270,23 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework35HomeScreenPatientInfoViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class MeasurementDataStruct;
+@class PatientInfo;
+@class Template;
 
+SWIFT_PROTOCOL("_TtP21ImageMeasureFramework20ImageMeasureProtocol_")
+@protocol ImageMeasureProtocol
+- (void)saveMeasureMentDataWithData:(NSArray<MeasurementDataStruct *> * _Nonnull)data;
+- (PatientInfo * _Nonnull)getPatientInfo SWIFT_WARN_UNUSED_RESULT;
+- (NSArray<Template *> * _Nonnull)getTemplateIndex SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface HomeScreenPatientInfoViewController (SWIFT_EXTENSION(ImageMeasureFramework)) <ImageMeasureProtocol>
+- (void)saveMeasureMentDataWithData:(NSArray<MeasurementDataStruct *> * _Nonnull)data;
+- (PatientInfo * _Nonnull)getPatientInfo SWIFT_WARN_UNUSED_RESULT;
+- (NSArray<Template *> * _Nonnull)getTemplateIndex SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 SWIFT_CLASS("_TtC21ImageMeasureFramework32HomeScreenTemplateViewController")
@@ -284,6 +300,7 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework32HomeScreenTemplateViewController")
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 SWIFT_CLASS("_TtC21ImageMeasureFramework26ImageMeasureViewController")
@@ -336,6 +353,13 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework33InsertPatientRecordViewController")
 - (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC21ImageMeasureFramework21MeasurementDataStruct")
+@interface MeasurementDataStruct : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
 
 
