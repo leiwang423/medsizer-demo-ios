@@ -44,6 +44,21 @@ class ViewController: SideMenuTransitionAnimatorViewController {
     self.imageMeasureViewController!.modalPresentationStyle = .popover
     self.imageMeasureViewController!.modalTransitionStyle = .crossDissolve
     self.imageMeasureViewController!.navigator = self.navigator
+    self.imageMeasureViewController!.delegate = self
     return self.imageMeasureViewController!
+  }
+}
+
+extension ViewController : ImageMeasureProtocol {
+  func saveMeasureMentData(data: MeasurementDataList) {
+    print("ImageMeasureProtocol::saveMeasureMentData")
+  }
+  func getPatientInfo() -> PatientInfo {
+    print("ImageMeasureProtocol::getPatientInfo")
+    return self.imageMeasureViewController!.generatePatientInfo()
+  }
+  func getTemplateIndex() -> [Template] {
+    print("ImageMeasureProtocol::getTemplateIndex")
+    return []
   }
 }

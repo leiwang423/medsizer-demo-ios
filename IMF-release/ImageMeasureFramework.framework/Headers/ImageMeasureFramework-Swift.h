@@ -271,6 +271,8 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework35HomeScreenPatientInfoViewController")
 @end
 
 
+
+
 SWIFT_CLASS("_TtC21ImageMeasureFramework32HomeScreenTemplateViewController")
 @interface HomeScreenTemplateViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
@@ -361,13 +363,13 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework16RulerManagerView")
 
 
 
-
-
 @interface RulerManagerView (SWIFT_EXTENSION(ImageMeasureFramework))
 - (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (void)touchesEnded:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (void)touchesMoved:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 @end
+
+
 
 
 
@@ -503,6 +505,8 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework12TemplateDBv2")
 @interface TemplateDBv2 : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
 
 
 

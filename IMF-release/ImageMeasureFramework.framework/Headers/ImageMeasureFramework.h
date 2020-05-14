@@ -3,7 +3,6 @@
 //  ImageMeasureFramework
 //
 //  Created by 王磊 on 2020/3/18.
-//  Copyright © 2020 Ramon Gilabert Llop. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
