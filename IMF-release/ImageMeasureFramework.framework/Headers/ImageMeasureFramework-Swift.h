@@ -276,14 +276,14 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework35HomeScreenPatientInfoViewController")
 
 SWIFT_PROTOCOL("_TtP21ImageMeasureFramework20ImageMeasureProtocol_")
 @protocol ImageMeasureProtocol
-- (void)saveMeasureMentDataWithData:(NSArray<MeasurementDataStruct *> * _Nonnull)data;
+- (void)saveMeasureMentDataWithRawPictureID:(NSString * _Nonnull)rawPictureID pictureID:(NSString * _Nonnull)pictureID data:(NSArray<MeasurementDataStruct *> * _Nonnull)data;
 - (PatientInfo * _Nonnull)getPatientInfo SWIFT_WARN_UNUSED_RESULT;
 - (NSArray<Template *> * _Nonnull)getTemplateIndex SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
 @interface HomeScreenPatientInfoViewController (SWIFT_EXTENSION(ImageMeasureFramework)) <ImageMeasureProtocol>
-- (void)saveMeasureMentDataWithData:(NSArray<MeasurementDataStruct *> * _Nonnull)data;
+- (void)saveMeasureMentDataWithRawPictureID:(NSString * _Nonnull)rawPictureID pictureID:(NSString * _Nonnull)pictureID data:(NSArray<MeasurementDataStruct *> * _Nonnull)data;
 - (PatientInfo * _Nonnull)getPatientInfo SWIFT_WARN_UNUSED_RESULT;
 - (NSArray<Template *> * _Nonnull)getTemplateIndex SWIFT_WARN_UNUSED_RESULT;
 @end
@@ -371,6 +371,17 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework12ModelManager")
 
 SWIFT_CLASS("_TtC21ImageMeasureFramework11PatientInfo")
 @interface PatientInfo : NSObject
+@property (nonatomic, copy) NSString * _Nonnull RollNo;
+@property (nonatomic, copy) NSString * _Nonnull Name;
+@property (nonatomic, copy) NSString * _Nonnull Age;
+@property (nonatomic, copy) NSString * _Nonnull Gender;
+@property (nonatomic, copy) NSString * _Nonnull Time;
+@property (nonatomic, copy) NSString * _Nonnull PatientType;
+@property (nonatomic, copy) NSString * _Nonnull RawPictureID;
+@property (nonatomic, copy) NSString * _Nonnull PictureID;
+@property (nonatomic, copy) NSString * _Nonnull TemplateID;
+@property (nonatomic, copy) NSString * _Nonnull MeasurementData;
+@property (nonatomic, copy) NSString * _Nonnull Remark;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -521,6 +532,22 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework10SwiftyMenu")
 
 SWIFT_CLASS("_TtC21ImageMeasureFramework8Template")
 @interface Template : NSObject
+@property (nonatomic, copy) NSString * _Nonnull ID;
+@property (nonatomic, copy) NSString * _Nonnull Manufacturer;
+@property (nonatomic, copy) NSString * _Nonnull Model;
+@property (nonatomic, copy) NSString * _Nonnull Category;
+@property (nonatomic, copy) NSString * _Nonnull Size;
+@property (nonatomic) float ScaleRatio;
+@property (nonatomic, copy) NSString * _Nonnull ImageID;
+@property (nonatomic, copy) NSString * _Nonnull SurgeryType;
+@property (nonatomic, copy) NSString * _Nonnull Brand;
+@property (nonatomic, copy) NSString * _Nonnull ProductType;
+@property (nonatomic, copy) NSString * _Nonnull Component;
+@property (nonatomic, copy) NSString * _Nonnull Location;
+@property (nonatomic) NSInteger PoolID;
+@property (nonatomic) NSInteger StorageIndex;
+@property (nonatomic, copy) NSString * _Nonnull Folder;
+@property (nonatomic, copy) NSString * _Nonnull DisplayName;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

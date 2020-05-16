@@ -58,7 +58,7 @@ class ViewController: SideMenuTransitionAnimatorViewController {
 
 extension ViewController : ImageMeasureProtocol {
   // received measurement data list from IMF
-  func saveMeasureMentData(data: [MeasurementDataStruct]) {
+  func saveMeasureMentData(rawPictureID: String, pictureID: String, data: [MeasurementDataStruct]) {
     print("ImageMeasureProtocol::saveMeasureMentData")
   }
   // provide patient info to IMF
