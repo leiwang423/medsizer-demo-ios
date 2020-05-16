@@ -14,7 +14,7 @@ class ViewController: SideMenuTransitionAnimatorViewController {
   public var navigator: UINavigationController!
   
   var imageMeasureViewController : ImageMeasureViewController?
-  
+    var demoViewController: DemoViewController!
   override func viewDidLoad() {
     print("ViewController viewDidLoad")
     super.viewDidLoad()
@@ -26,7 +26,8 @@ class ViewController: SideMenuTransitionAnimatorViewController {
       self.navigator = navigator
       self.navigator.delegate = self
       createImageMeasureViewController()
-      self.navigator.setViewControllers([self.imageMeasureViewController!], animated: true)
+      createDemoViewController()
+      self.navigator.setViewControllers([self.demoViewController, self.imageMeasureViewController!], animated: true)
       break
     default:
       super.prepare(for: segue, sender: sender)
@@ -37,6 +38,12 @@ class ViewController: SideMenuTransitionAnimatorViewController {
   }
   
 
+    private func createDemoViewController() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        self.demoViewController = storyboard.instantiateViewController(withIdentifier: "DemoViewController") as! DemoViewController
+        self.demoViewController!.navigator = self.navigator
+        self.demoViewController.imageMeasureViewController = self.imageMeasureViewController
+    }
   private func createImageMeasureViewController() -> ImageMeasureViewController {
     print("createImageMeasureViewController")
     let storyboard = UIStoryboard(name: "measure", bundle: MeasureUtils.getBundle(bundleName:  "ImageMeasureResourceBundle"))
@@ -51,7 +58,7 @@ class ViewController: SideMenuTransitionAnimatorViewController {
 
 extension ViewController : ImageMeasureProtocol {
   // received measurement data list from IMF
-  func saveMeasureMentData(data: MeasurementDataList) {
+  func saveMeasureMentData(data: [MeasurementDataStruct]) {
     print("ImageMeasureProtocol::saveMeasureMentData")
   }
   // provide patient info to IMF

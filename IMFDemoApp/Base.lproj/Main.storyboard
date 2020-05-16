@@ -11,13 +11,16 @@
         <!--DemoView-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="DemoView" id="BYZ-38-t0r" customClass="DemoViewController" customModule="hello" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DemoViewController" title="DemoView" id="BYZ-38-t0r" customClass="DemoViewController" customModule="IMF_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="764"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pIO-um-TmL">
-                                <rect key="frame" x="20" y="64" width="151" height="100.5"/>
+                            <stackView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Gcg-CD-6Xh" customClass="RatingControl" customModule="IMF_demo" customModuleProvider="target">
+                                <rect key="frame" x="20" y="622" width="326" height="110"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pIO-um-TmL">
+                                <rect key="frame" x="110" y="154" width="146" height="100.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rgh-hs-WWs">
                                         <rect key="frame" x="0.0" y="0.0" width="86.5" height="20.5"/>
@@ -30,35 +33,47 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ba9-3C-VS3">
-                                        <rect key="frame" x="0.0" y="70.5" width="151" height="30"/>
-                                        <state key="normal" title="Set Default Label Text"/>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ba9-3C-VS3">
+                                        <rect key="frame" x="0.0" y="70.5" width="146" height="30"/>
+                                        <state key="normal" title="Enter Image Measure"/>
                                         <connections>
                                             <action selector="setDefaultText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U70-TO-pUc"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="f2n-WY-7Bb">
-                                <rect key="frame" x="20" y="182" width="320" height="320"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="f2n-WY-7Bb">
+                                <rect key="frame" x="84" y="271" width="199.5" height="300"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Evr-iw-Cfl" appends="YES" id="bG0-CY-h5K"/>
                                 </connections>
                             </imageView>
-                            <stackView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Gcg-CD-6Xh" customClass="RatingControl" customModule="hello" customModuleProvider="target">
-                                <rect key="frame" x="20" y="510" width="326" height="110"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="pIO-um-TmL" firstAttribute="centerX" secondItem="f2n-WY-7Bb" secondAttribute="centerX" id="5xv-jy-hxA"/>
+                            <constraint firstItem="pIO-um-TmL" firstAttribute="top" secondItem="Dck-s9-pZK" secondAttribute="top" constant="66" id="85N-ee-zGM"/>
+                            <constraint firstItem="Gcg-CD-6Xh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="622" id="RIZ-Vp-CgW"/>
+                            <constraint firstItem="f2n-WY-7Bb" firstAttribute="top" secondItem="pIO-um-TmL" secondAttribute="bottom" constant="38.5" id="VO3-3N-fJm"/>
+                            <constraint firstItem="pIO-um-TmL" firstAttribute="leading" secondItem="Gcg-CD-6Xh" secondAttribute="leading" constant="90" id="g1Z-eH-ZgW"/>
+                            <constraint firstItem="Dck-s9-pZK" firstAttribute="bottom" secondItem="Gcg-CD-6Xh" secondAttribute="bottom" constant="32" id="mgs-Qx-ggK"/>
+                            <constraint firstItem="Dck-s9-pZK" firstAttribute="trailing" secondItem="Gcg-CD-6Xh" secondAttribute="trailing" constant="68" id="p3I-cd-XG2"/>
+                            <constraint firstItem="f2n-WY-7Bb" firstAttribute="top" secondItem="pIO-um-TmL" secondAttribute="bottom" constant="22.5" id="wLh-EJ-CoX"/>
+                            <constraint firstItem="pIO-um-TmL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="90" id="yci-8a-jej"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Dck-s9-pZK"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="VO3-3N-fJm"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="3ZQ-rp-us7"/>
+                    <navigationItem key="navigationItem" id="LrD-qf-a8M"/>
+                    <size key="freeformSize" width="414" height="764"/>
                     <connections>
                         <outlet property="mealNameLabel" destination="Rgh-hs-WWs" id="cly-e0-Sjz"/>
-                        <outlet property="nameTextField" destination="zYR-ET-5lb" id="znL-Kq-cEU"/>
+                        <outlet property="nameTextField" destination="zYR-ET-5lb" id="Z4Y-Fc-3DS"/>
                         <outlet property="photoImageView" destination="f2n-WY-7Bb" id="aHZ-S0-Fo2"/>
                         <outlet property="ratingControl" destination="Gcg-CD-6Xh" id="Gtc-wS-Xeb"/>
                     </connections>
@@ -70,7 +85,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="119" y="17"/>
+            <point key="canvasLocation" x="118.84057971014494" y="16.741071428571427"/>
         </scene>
         <!--Navigation controller-->
         <scene sceneID="s2z-TN-QQy">
@@ -94,7 +109,7 @@
         <!--医学图像测量-->
         <scene sceneID="DPZ-gx-AS4">
             <objects>
-                <viewController title="医学图像测量" id="6SL-la-MlT" customClass="ViewController" customModule="Med_Sizer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="医学图像测量" id="6SL-la-MlT" customClass="ViewController" customModule="IMF_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gpZ-wo-5YJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>.DS_Store</key>
+		<data>
+		2gUL98B032QBdpq5ykVRZtqUnDU=
+		</data>
 		<key>EmojiCollectionViewCell.nib/objects-12.3+.nib</key>
 		<data>
 		f0mc6AowxDwFKa+XFtbDCTe9SEI=
@@ -46,7 +50,7 @@
 		</data>
 		<key>Modules/ImageMeasureFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		t4n2dYlnyrRywPqVLYqfiQF5Xzk=
+		I5J94U2xUZIIcTzpJNhyGJrpLfM=
 		</data>
 		<key>Modules/ImageMeasureFramework.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -54,7 +58,7 @@
 		</data>
 		<key>Modules/ImageMeasureFramework.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		t4n2dYlnyrRywPqVLYqfiQF5Xzk=
+		I5J94U2xUZIIcTzpJNhyGJrpLfM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -150,7 +154,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZvsOOXbAkFHcLM3lHenulS2J4KY2O4bDR7R6qetnvMo=
+			RLQyZpV5WWGtcnQ/g/65vnREM4aw3FXCZAPgrc/GnMo=
 			</data>
 		</dict>
 		<key>Modules/ImageMeasureFramework.swiftmodule/arm64.swiftdoc</key>
@@ -164,7 +168,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZvsOOXbAkFHcLM3lHenulS2J4KY2O4bDR7R6qetnvMo=
+			RLQyZpV5WWGtcnQ/g/65vnREM4aw3FXCZAPgrc/GnMo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

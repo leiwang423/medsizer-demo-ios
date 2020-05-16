@@ -13,11 +13,12 @@ class DemoViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
 
     @IBOutlet weak var mealNameLabel: UILabel!
 
-    @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var photoImageView: UIImageView!
     
     @IBOutlet weak var ratingControl: RatingControl!
-    var vv: ImageMeasureViewController? = nil
+    var imageMeasureViewController: ImageMeasureViewController? = nil
+    var navigator: UINavigationController!
 
   
     
@@ -29,6 +30,7 @@ class DemoViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
 
     @IBAction func setDefaultText(_ sender: UIButton) {
         mealNameLabel.text = "default text set"
+        self.navigator.setViewControllers([self, self.imageMeasureViewController!], animated: true)
     }
     @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
         nameTextField.resignFirstResponder()
@@ -49,6 +51,7 @@ class DemoViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         }
         photoImageView.image = selectedImage
         dismiss(animated: true, completion: nil)
+        
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
