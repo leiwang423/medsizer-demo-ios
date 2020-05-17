@@ -303,10 +303,17 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework32HomeScreenTemplateViewController")
 @end
 
 
+@class UINavigationController;
 
 SWIFT_CLASS("_TtC21ImageMeasureFramework26ImageMeasureViewController")
 @interface ImageMeasureViewController : UIViewController
+@property (nonatomic, weak) id <ImageMeasureProtocol> _Nullable delegate;
+@property (nonatomic, strong) UINavigationController * _Null_unspecified navigator;
+@property (nonatomic, strong) PatientInfo * _Nullable patientInfo;
+@property (nonatomic, strong) DataSyncViewController * _Nullable dataSyncViewController;
 - (void)viewDidLoad;
+- (void)initDataSyncPanel SWIFT_METHOD_FAMILY(none);
+- (PatientInfo * _Nonnull)generatePatientInfo SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -317,7 +324,6 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework26ImageMeasureViewController")
 @interface ImageMeasureViewController (SWIFT_EXTENSION(ImageMeasureFramework)) <UIScrollViewDelegate>
 @end
 
-@class UINavigationController;
 @protocol UIViewControllerAnimatedTransitioning;
 
 @interface ImageMeasureViewController (SWIFT_EXTENSION(ImageMeasureFramework)) <UINavigationControllerDelegate>

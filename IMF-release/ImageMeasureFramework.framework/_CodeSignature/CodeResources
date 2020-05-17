@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/ImageMeasureFramework-Swift.h</key>
 		<data>
-		2ajZNB/S7EWNc1c+wGYSyOmlfNI=
+		Z1+5mTenSTLNkCsCK8XMFa24SMo=
 		</data>
 		<key>Headers/ImageMeasureFramework.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/ImageMeasureFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		kLNVzy/8PUhePb+wwkrroL4DVkk=
+		RTJ8ftfa7M6a59PW0LqHIKUFYCs=
 		</data>
 		<key>Modules/ImageMeasureFramework.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/ImageMeasureFramework.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		kLNVzy/8PUhePb+wwkrroL4DVkk=
+		RTJ8ftfa7M6a59PW0LqHIKUFYCs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -126,7 +126,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jUQ+rNmjmjyGTRtviOnBirZcoN4yI9UI9pfFt2Ue73o=
+			qX3uvS9QzY3Z/MdQfNzpprlye0M5aUPi0jE3mq1zhHo=
 			</data>
 		</dict>
 		<key>Headers/ImageMeasureFramework.h</key>
@@ -154,7 +154,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BW2hMFqQGqrlhEep9/YZT+3TBpXepxfWYFNWG+GW1Nk=
+			MOiuNjiCQwKYNE/iz92LnKaug1aZMEpetxua3ib5pk0=
 			</data>
 		</dict>
 		<key>Modules/ImageMeasureFramework.swiftmodule/arm64.swiftdoc</key>
@@ -168,7 +168,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BW2hMFqQGqrlhEep9/YZT+3TBpXepxfWYFNWG+GW1Nk=
+			MOiuNjiCQwKYNE/iz92LnKaug1aZMEpetxua3ib5pk0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
