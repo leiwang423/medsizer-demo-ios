@@ -250,6 +250,7 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework36DDPerspectiveTransformViewController")
 SWIFT_CLASS("_TtC21ImageMeasureFramework22DataSyncViewController")
 @interface DataSyncViewController : UIViewController
 - (void)viewDidLoad;
+- (void)viewWillDisappear:(BOOL)animated;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -358,6 +359,13 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework33InsertPatientRecordViewController")
 
 SWIFT_CLASS("_TtC21ImageMeasureFramework21MeasurementDataStruct")
 @interface MeasurementDataStruct : NSObject
+@property (nonatomic) NSInteger id;
+@property (nonatomic, copy) NSString * _Nonnull title;
+@property (nonatomic, copy) NSString * _Nonnull value;
+@property (nonatomic, copy) NSString * _Nonnull unit;
+@property (nonatomic) NSInteger rulerType;
+@property (nonatomic, copy) NSArray<NSValue *> * _Nonnull vertics;
+@property (nonatomic) CGPoint center;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
