@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/ImageMeasureFramework-Swift.h</key>
 		<data>
-		Z1+5mTenSTLNkCsCK8XMFa24SMo=
+		I/JVOWQzrjFq06oifGQXmTBDxZM=
 		</data>
 		<key>Headers/ImageMeasureFramework.h</key>
 		<data>
@@ -46,19 +46,19 @@
 		</data>
 		<key>Modules/ImageMeasureFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		bO9I+lI88xTPAhU0nhO53TA0IDs=
+		a+WTDSWen03GgPpACbi2IU6Kba4=
 		</data>
 		<key>Modules/ImageMeasureFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		RTJ8ftfa7M6a59PW0LqHIKUFYCs=
+		l04uBVbsfMxava6ZsOEJNXpRFkw=
 		</data>
 		<key>Modules/ImageMeasureFramework.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		bO9I+lI88xTPAhU0nhO53TA0IDs=
+		a+WTDSWen03GgPpACbi2IU6Kba4=
 		</data>
 		<key>Modules/ImageMeasureFramework.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		RTJ8ftfa7M6a59PW0LqHIKUFYCs=
+		l04uBVbsfMxava6ZsOEJNXpRFkw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -126,7 +126,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qX3uvS9QzY3Z/MdQfNzpprlye0M5aUPi0jE3mq1zhHo=
+			oGD1Pu86Qp/9FRLDb/WxElDvxTn2cJYBlXluFW5P7fE=
 			</data>
 		</dict>
 		<key>Headers/ImageMeasureFramework.h</key>
@@ -147,28 +147,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dcF4kbuLVQG6WibQXSgZ4qZoiI8AxKJ1XCkZW3b0Vjs=
+			mLkhTtQetbOmmXs/gyRBWXv7D+TyLd4gwPe4wGzIEqI=
 			</data>
 		</dict>
 		<key>Modules/ImageMeasureFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MOiuNjiCQwKYNE/iz92LnKaug1aZMEpetxua3ib5pk0=
+			foytlqJ93sx4Yc609gcuh7oHei3+FOBt2PWOMgz+8eo=
 			</data>
 		</dict>
 		<key>Modules/ImageMeasureFramework.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dcF4kbuLVQG6WibQXSgZ4qZoiI8AxKJ1XCkZW3b0Vjs=
+			mLkhTtQetbOmmXs/gyRBWXv7D+TyLd4gwPe4wGzIEqI=
 			</data>
 		</dict>
 		<key>Modules/ImageMeasureFramework.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MOiuNjiCQwKYNE/iz92LnKaug1aZMEpetxua3ib5pk0=
+			foytlqJ93sx4Yc609gcuh7oHei3+FOBt2PWOMgz+8eo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -365,12 +365,19 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework33InsertPatientRecordViewController")
 
 SWIFT_CLASS("_TtC21ImageMeasureFramework21MeasurementDataStruct")
 @interface MeasurementDataStruct : NSObject
+/// 测量数据ID
 @property (nonatomic) NSInteger id;
+/// 测量项名称
 @property (nonatomic, copy) NSString * _Nonnull title;
+/// 测量值
 @property (nonatomic, copy) NSString * _Nonnull value;
+/// 测量值单位
 @property (nonatomic, copy) NSString * _Nonnull unit;
+/// 测量工具类别
 @property (nonatomic) NSInteger rulerType;
+/// 测量路径关键点列表
 @property (nonatomic, copy) NSArray<NSValue *> * _Nonnull vertics;
+/// 测量位置中心点
 @property (nonatomic) CGPoint center;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
@@ -385,16 +392,27 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework12ModelManager")
 
 SWIFT_CLASS("_TtC21ImageMeasureFramework11PatientInfo")
 @interface PatientInfo : NSObject
+/// 流水号
 @property (nonatomic, copy) NSString * _Nonnull RollNo;
+/// 姓名
 @property (nonatomic, copy) NSString * _Nonnull Name;
+/// 年龄
 @property (nonatomic, copy) NSString * _Nonnull Age;
+/// 性别
 @property (nonatomic, copy) NSString * _Nonnull Gender;
+/// 诊断时间
 @property (nonatomic, copy) NSString * _Nonnull Time;
+/// 手术类别或治疗类型
 @property (nonatomic, copy) NSString * _Nonnull PatientType;
+/// 原始影像ID
 @property (nonatomic, copy) NSString * _Nonnull RawPictureID;
+/// 实测影像ID
 @property (nonatomic, copy) NSString * _Nonnull PictureID;
+/// 匹配模版ID
 @property (nonatomic, copy) NSString * _Nonnull TemplateID;
+/// 测量数据
 @property (nonatomic, copy) NSString * _Nonnull MeasurementData;
+/// 诊断备注
 @property (nonatomic, copy) NSString * _Nonnull Remark;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -546,21 +564,27 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework10SwiftyMenu")
 
 SWIFT_CLASS("_TtC21ImageMeasureFramework8Template")
 @interface Template : NSObject
+/// 流水号/编号
 @property (nonatomic, copy) NSString * _Nonnull ID;
+/// 生产厂商/ 供应商
 @property (nonatomic, copy) NSString * _Nonnull Manufacturer;
-@property (nonatomic, copy) NSString * _Nonnull Model;
-@property (nonatomic, copy) NSString * _Nonnull Category;
+/// 尺寸/型号
 @property (nonatomic, copy) NSString * _Nonnull Size;
+/// 放大率
 @property (nonatomic) float ScaleRatio;
+/// 图片ID/模版文件路径
 @property (nonatomic, copy) NSString * _Nonnull ImageID;
+/// 适用手术类型
 @property (nonatomic, copy) NSString * _Nonnull SurgeryType;
+/// 品牌
 @property (nonatomic, copy) NSString * _Nonnull Brand;
+/// 产品子类
 @property (nonatomic, copy) NSString * _Nonnull ProductType;
+/// 适用身体部位
 @property (nonatomic, copy) NSString * _Nonnull Component;
+/// 放置朝向，方位
 @property (nonatomic, copy) NSString * _Nonnull Location;
-@property (nonatomic) NSInteger PoolID;
-@property (nonatomic) NSInteger StorageIndex;
-@property (nonatomic, copy) NSString * _Nonnull Folder;
+/// 显示名称
 @property (nonatomic, copy) NSString * _Nonnull DisplayName;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
