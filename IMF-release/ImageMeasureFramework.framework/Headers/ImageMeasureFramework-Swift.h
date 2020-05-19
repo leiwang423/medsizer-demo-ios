@@ -273,20 +273,20 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework35HomeScreenPatientInfoViewController")
 
 @class MeasurementDataStruct;
 @class PatientInfo;
-@class Template;
+@class TemplateMatchInfo;
 
 SWIFT_PROTOCOL("_TtP21ImageMeasureFramework20ImageMeasureProtocol_")
 @protocol ImageMeasureProtocol
 - (void)saveMeasureMentDataWithRawPictureID:(NSString * _Nonnull)rawPictureID pictureID:(NSString * _Nonnull)pictureID data:(NSArray<MeasurementDataStruct *> * _Nonnull)data;
 - (PatientInfo * _Nonnull)getPatientInfo SWIFT_WARN_UNUSED_RESULT;
-- (NSArray<Template *> * _Nonnull)getTemplateIndex SWIFT_WARN_UNUSED_RESULT;
+- (void)saveMatchedTemplatesWithPictureID:(NSString * _Nonnull)pictureID templates:(NSArray<TemplateMatchInfo *> * _Nonnull)templates;
 @end
 
 
 @interface HomeScreenPatientInfoViewController (SWIFT_EXTENSION(ImageMeasureFramework)) <ImageMeasureProtocol>
+- (void)saveMatchedTemplatesWithPictureID:(NSString * _Nonnull)pictureID templates:(NSArray<TemplateMatchInfo *> * _Nonnull)templates;
 - (void)saveMeasureMentDataWithRawPictureID:(NSString * _Nonnull)rawPictureID pictureID:(NSString * _Nonnull)pictureID data:(NSArray<MeasurementDataStruct *> * _Nonnull)data;
 - (PatientInfo * _Nonnull)getPatientInfo SWIFT_WARN_UNUSED_RESULT;
-- (NSArray<Template *> * _Nonnull)getTemplateIndex SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -304,6 +304,7 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework32HomeScreenTemplateViewController")
 
 
 @class UINavigationController;
+@class Template;
 
 SWIFT_CLASS("_TtC21ImageMeasureFramework26ImageMeasureViewController")
 @interface ImageMeasureViewController : UIViewController
@@ -311,6 +312,7 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework26ImageMeasureViewController")
 @property (nonatomic, strong) UINavigationController * _Null_unspecified navigator;
 @property (nonatomic, strong) PatientInfo * _Nullable patientInfo;
 @property (nonatomic, strong) DataSyncViewController * _Nullable dataSyncViewController;
++ (void)reloadTemplates:(NSArray<Template *> * _Nonnull)templates;
 - (void)viewDidLoad;
 - (void)initDataSyncPanel SWIFT_METHOD_FAMILY(none);
 - (PatientInfo * _Nonnull)generatePatientInfo SWIFT_WARN_UNUSED_RESULT;
@@ -408,8 +410,8 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework11PatientInfo")
 @property (nonatomic, copy) NSString * _Nonnull RawPictureID;
 /// 实测影像ID
 @property (nonatomic, copy) NSString * _Nonnull PictureID;
-/// 匹配模版ID
-@property (nonatomic, copy) NSString * _Nonnull TemplateID;
+/// 匹配模版ID列表
+@property (nonatomic, copy) NSString * _Nonnull MatchedTemplates;
 /// 测量数据
 @property (nonatomic, copy) NSString * _Nonnull MeasurementData;
 /// 诊断备注
@@ -593,6 +595,20 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework8Template")
 SWIFT_CLASS("_TtC21ImageMeasureFramework12TemplateDBv2")
 @interface TemplateDBv2 : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC21ImageMeasureFramework17TemplateMatchInfo")
+@interface TemplateMatchInfo : NSObject
+/// Template ID
+@property (nonatomic, copy) NSString * _Nonnull id;
+/// 匹配位置中心点
+@property (nonatomic) CGPoint center;
+/// 被测图片放大比率
+@property (nonatomic) CGFloat mainPixelsPerMm;
+- (nonnull instancetype)initWithId:(NSString * _Nonnull)id center:(CGPoint)center mainPixelsPerMm:(CGFloat)mainPixelsPerMm OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
 
 
