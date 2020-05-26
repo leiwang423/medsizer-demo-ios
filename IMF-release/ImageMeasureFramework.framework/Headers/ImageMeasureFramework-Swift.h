@@ -279,12 +279,14 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework35HomeScreenPatientInfoViewController")
 @class MeasurementDataStruct;
 @class PatientInfo;
 @class TemplateMatchInfo;
+@class MeasurementItemInfo;
 
 SWIFT_PROTOCOL("_TtP21ImageMeasureFramework20ImageMeasureProtocol_")
 @protocol ImageMeasureProtocol
 - (void)saveMeasureMentDataWithRawPictureID:(NSString * _Nonnull)rawPictureID pictureID:(NSString * _Nonnull)pictureID data:(NSArray<MeasurementDataStruct *> * _Nonnull)data comment:(NSString * _Nonnull)comment;
 - (PatientInfo * _Nonnull)getPatientInfo SWIFT_WARN_UNUSED_RESULT;
 - (void)saveMatchedTemplatesWithPictureID:(NSString * _Nonnull)pictureID templates:(NSArray<TemplateMatchInfo *> * _Nonnull)templates;
+- (NSArray<MeasurementItemInfo *> * _Nonnull)getMeasurementItemWithSurgeryType:(NSString * _Nonnull)surgeryType SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -292,6 +294,7 @@ SWIFT_PROTOCOL("_TtP21ImageMeasureFramework20ImageMeasureProtocol_")
 - (void)saveMatchedTemplatesWithPictureID:(NSString * _Nonnull)pictureID templates:(NSArray<TemplateMatchInfo *> * _Nonnull)templates;
 - (void)saveMeasureMentDataWithRawPictureID:(NSString * _Nonnull)rawPictureID pictureID:(NSString * _Nonnull)pictureID data:(NSArray<MeasurementDataStruct *> * _Nonnull)data comment:(NSString * _Nonnull)comment;
 - (PatientInfo * _Nonnull)getPatientInfo SWIFT_WARN_UNUSED_RESULT;
+- (NSArray<MeasurementItemInfo *> * _Nonnull)getMeasurementItemWithSurgeryType:(NSString * _Nonnull)surgeryType SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -327,14 +330,14 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework26ImageMeasureViewController")
 
 
 
+
+@interface ImageMeasureViewController (SWIFT_EXTENSION(ImageMeasureFramework)) <UIScrollViewDelegate>
+@end
+
 @protocol UIViewControllerAnimatedTransitioning;
 
 @interface ImageMeasureViewController (SWIFT_EXTENSION(ImageMeasureFramework)) <UINavigationControllerDelegate>
 - (id <UIViewControllerAnimatedTransitioning> _Nullable)navigationController:(UINavigationController * _Nonnull)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController * _Nonnull)fromVC toViewController:(UIViewController * _Nonnull)toVC SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-@interface ImageMeasureViewController (SWIFT_EXTENSION(ImageMeasureFramework)) <UIScrollViewDelegate>
 @end
 
 
@@ -388,6 +391,17 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework21MeasurementDataStruct")
 @property (nonatomic) CGPoint center;
 + (NSString * _Nonnull)encodeWithMeasurementDataList:(NSArray<MeasurementDataStruct *> * _Nonnull)measurementDataList SWIFT_WARN_UNUSED_RESULT;
 + (NSArray<MeasurementDataStruct *> * _Nonnull)decodeWithJsonStr:(NSString * _Nonnull)jsonStr SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC21ImageMeasureFramework19MeasurementItemInfo")
+@interface MeasurementItemInfo : NSObject
+@property (nonatomic, copy) NSString * _Nonnull title;
+@property (nonatomic, copy) NSString * _Nonnull unit;
+@property (nonatomic, copy) NSString * _Nonnull desc;
+- (nonnull instancetype)initWithTitle:(NSString * _Nonnull)title unit:(NSString * _Nonnull)unit description:(NSString * _Nonnull)description OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end

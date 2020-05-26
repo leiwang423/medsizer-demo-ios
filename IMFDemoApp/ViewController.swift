@@ -58,6 +58,10 @@ class ViewController: SideMenuTransitionAnimatorViewController {
 }
 
 extension ViewController : ImageMeasureProtocol {
+    func getMeasurementItem(surgeryType: String) -> [MeasurementItemInfo] {
+        return []
+    }
+    
     // received measurement data list from IMF
     func saveMeasureMentData(rawPictureID: String, pictureID: String, data: [MeasurementDataStruct], comment: String) {
         print("ImageMeasureProtocol::saveMeasureMentData")
