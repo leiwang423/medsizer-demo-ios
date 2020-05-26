@@ -46,6 +46,7 @@ class ViewController: SideMenuTransitionAnimatorViewController {
     }
   private func createImageMeasureViewController() -> ImageMeasureViewController {
     print("createImageMeasureViewController")
+    ImageMeasureViewController.reloadTemplates([])
     let storyboard = UIStoryboard(name: "measure", bundle: MeasureUtils.getBundle(bundleName:  "ImageMeasureResourceBundle"))
     self.imageMeasureViewController = storyboard.instantiateViewController(withIdentifier: "ImageMeasureViewController") as! ImageMeasureViewController
     self.imageMeasureViewController!.modalPresentationStyle = .popover
@@ -57,14 +58,15 @@ class ViewController: SideMenuTransitionAnimatorViewController {
 }
 
 extension ViewController : ImageMeasureProtocol {
+    // received measurement data list from IMF
+    func saveMeasureMentData(rawPictureID: String, pictureID: String, data: [MeasurementDataStruct], comment: String) {
+        print("ImageMeasureProtocol::saveMeasureMentData")
+    }
+    
     func saveMatchedTemplates(pictureID: String, templates: [TemplateMatchInfo]) {
         print("ImageMeasureProtocol::saveMatchedTemplates")
     }
     
-  // received measurement data list from IMF
-  func saveMeasureMentData(rawPictureID: String, pictureID: String, data: [MeasurementDataStruct]) {
-    print("ImageMeasureProtocol::saveMeasureMentData")
-  }
   // provide patient info to IMF
   func getPatientInfo() -> PatientInfo {
     print("ImageMeasureProtocol::getPatientInfo")
