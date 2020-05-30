@@ -427,6 +427,8 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework11PatientInfo")
 @property (nonatomic, copy) NSString * _Nonnull Time;
 /// 手术类别或治疗类型
 @property (nonatomic, copy) NSString * _Nonnull PatientType;
+/// 手术类别
+@property (nonatomic, copy) NSString * _Nonnull SurgeryType;
 /// 原始影像ID
 @property (nonatomic, copy) NSString * _Nonnull RawPictureID;
 /// 实测影像ID
