@@ -61,6 +61,8 @@ extension ViewController : ImageMeasureProtocol {
     func getMeasurementItem(surgeryType: String) -> [MeasurementItemInfo] {
         return []
     }
+    func saveMeasureMentData(rawPictureID: String, pictureID: String, json: String, comment: String) {
+    }
     
     // received measurement data list from IMF
     func saveMeasureMentData(rawPictureID: String, pictureID: String, data: [MeasurementDataStruct], comment: String) {

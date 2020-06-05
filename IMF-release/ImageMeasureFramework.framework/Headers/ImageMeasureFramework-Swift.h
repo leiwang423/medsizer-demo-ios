@@ -284,6 +284,7 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework35HomeScreenPatientInfoViewController")
 SWIFT_PROTOCOL("_TtP21ImageMeasureFramework20ImageMeasureProtocol_")
 @protocol ImageMeasureProtocol
 - (void)saveMeasureMentDataWithRawPictureID:(NSString * _Nonnull)rawPictureID pictureID:(NSString * _Nonnull)pictureID data:(NSArray<MeasurementDataStruct *> * _Nonnull)data comment:(NSString * _Nonnull)comment;
+- (void)saveMeasureMentDataWithRawPictureID:(NSString * _Nonnull)rawPictureID pictureID:(NSString * _Nonnull)pictureID json:(NSString * _Nonnull)json comment:(NSString * _Nonnull)comment;
 - (PatientInfo * _Nonnull)getPatientInfo SWIFT_WARN_UNUSED_RESULT;
 - (void)saveMatchedTemplatesWithPictureID:(NSString * _Nonnull)pictureID templates:(NSArray<TemplateMatchInfo *> * _Nonnull)templates;
 - (NSArray<MeasurementItemInfo *> * _Nonnull)getMeasurementItemWithSurgeryType:(NSString * _Nonnull)surgeryType SWIFT_WARN_UNUSED_RESULT;
@@ -293,6 +294,7 @@ SWIFT_PROTOCOL("_TtP21ImageMeasureFramework20ImageMeasureProtocol_")
 @interface HomeScreenPatientInfoViewController (SWIFT_EXTENSION(ImageMeasureFramework)) <ImageMeasureProtocol>
 - (void)saveMatchedTemplatesWithPictureID:(NSString * _Nonnull)pictureID templates:(NSArray<TemplateMatchInfo *> * _Nonnull)templates;
 - (void)saveMeasureMentDataWithRawPictureID:(NSString * _Nonnull)rawPictureID pictureID:(NSString * _Nonnull)pictureID data:(NSArray<MeasurementDataStruct *> * _Nonnull)data comment:(NSString * _Nonnull)comment;
+- (void)saveMeasureMentDataWithRawPictureID:(NSString * _Nonnull)rawPictureID pictureID:(NSString * _Nonnull)pictureID json:(NSString * _Nonnull)json comment:(NSString * _Nonnull)comment;
 - (PatientInfo * _Nonnull)getPatientInfo SWIFT_WARN_UNUSED_RESULT;
 - (NSArray<MeasurementItemInfo *> * _Nonnull)getMeasurementItemWithSurgeryType:(NSString * _Nonnull)surgeryType SWIFT_WARN_UNUSED_RESULT;
 @end
@@ -343,10 +345,10 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework26ImageMeasureViewController")
 
 
 
-
-
 @interface ImageMeasureViewController (SWIFT_EXTENSION(ImageMeasureFramework)) <UIViewControllerTransitioningDelegate>
 @end
+
+
 
 
 
@@ -439,6 +441,12 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework11PatientInfo")
 @property (nonatomic, copy) NSString * _Nonnull MeasurementData;
 /// 诊断备注
 @property (nonatomic, copy) NSString * _Nonnull Remark;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC21ImageMeasureFramework16PatientInfoCache")
+@interface PatientInfoCache : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
