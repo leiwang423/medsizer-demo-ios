@@ -427,6 +427,12 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework11PatientInfo")
 @property (nonatomic, copy) NSString * _Nonnull Gender;
 /// 诊断时间
 @property (nonatomic, copy) NSString * _Nonnull Time;
+/// 医院
+@property (nonatomic, copy) NSString * _Nonnull Hospital;
+/// 科室
+@property (nonatomic, copy) NSString * _Nonnull Department;
+/// 床号
+@property (nonatomic, copy) NSString * _Nonnull BedNo;
 /// 手术类别或治疗类型
 @property (nonatomic, copy) NSString * _Nonnull PatientType;
 /// 手术类别
