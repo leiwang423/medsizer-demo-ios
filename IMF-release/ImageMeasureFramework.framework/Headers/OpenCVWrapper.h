@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (bool)isConvexWithOpenCV :(const CGPoint[_Nonnull]) points :(int)count;
 + (bool)isIntersectedWithOpenCV:(const CGPoint[_Nonnull]) pointArray1 :(int)count1 :(const CGPoint[_Nonnull]) pointArray2 :(int)count2;
 + (UIImage *)changePixelValueWithOpenCV:(UIImage*)inputImage :(int)red :(int)green :(int)blue :(int) alpha :(int)anchorX :(int)anchorY : (bool)debug;
-+ (bool)detectAnchorWithOpenCV:(UIImage*)inputImage :(int*)centroidX :(int*)centroidY : (bool)debug;
++ (UIImage *)detectAnchorWithOpenCV:(UIImage*)inputImage :(int*)centroidX :(int*)centroidY : (bool)debug;
 + (bool)findCentroidWithOpenCV:(UIImage*)inputImage :(int*)detectedWidth :(int*)detectedHeight :(int*)detectedCenterX :(int*)detectedCenterY :(bool)debug;
 @end
 
