@@ -6,11 +6,11 @@
 	<dict>
 		<key>EmojiCollectionViewCell.nib/objects-12.3+.nib</key>
 		<data>
-		Bo5PHoKTFATwoVEIXXpzVq0wrBc=
+		phpCrAitVgbrlegbOoUspQ5jyT8=
 		</data>
 		<key>EmojiCollectionViewCell.nib/runtime.nib</key>
 		<data>
-		U/vEpfGqGJ8VccXBO42xzqEaglY=
+		HIjNf4tCHKhCiR03UgiadLHzs8I=
 		</data>
 		<key>Headers/FMDatabase.h</key>
 		<data>
@@ -66,15 +66,15 @@
 		</data>
 		<key>StickerCollectionViewCell.nib/objects-12.3+.nib</key>
 		<data>
-		XflD2DCpt1urq/VQmT4w3QjzYlo=
+		2EyL/0tbIPuD/UAvHgNkMojOBiA=
 		</data>
 		<key>StickerCollectionViewCell.nib/runtime.nib</key>
 		<data>
-		2/SPNgFXVsxIBi6RqY2BtO+Dqk4=
+		vxpivcNbQhaNCJCu7H1qWVUinYg=
 		</data>
 		<key>StickersViewController.nib</key>
 		<data>
-		Qa/XGdqfs79bRvkA1E51/FLsjkg=
+		BTBEWtWzXSlUEyG3KczoLcCQrN8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -83,14 +83,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			53J8zHWFC1laRTwCPds6Ru57S9uNwPLY4X563k1eJ2Y=
+			aWbAwOaDlU1dg+x6WAUy0L4N3STgqLqjomAAZ/PfUHc=
 			</data>
 		</dict>
 		<key>EmojiCollectionViewCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rPGgLseMKdMcdv4H85m3fKGO6RgcaP4a1VN8N8HXQGg=
+			IulSXpShw8BgVpaaeqe2/UCEag78NE7LZb/DTSZ/onM=
 			</data>
 		</dict>
 		<key>Headers/FMDatabase.h</key>
@@ -181,21 +181,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EGlW4NcL8w99PqD+F9TiuXcf5LCq5uBa6sL47BbH1FQ=
+			LeueQ9NuQxoP5LyHosy7jX81YhRF9+Lt8LD9IJR8oq0=
 			</data>
 		</dict>
 		<key>StickerCollectionViewCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			30PxX+qaln1XhkwuXTDddjjrDyPlBSz5bgJEXHkYHfY=
+			3Fg0jNJSvPXje2ge+lqREMouZ7Lvz8Gs9ImTGoUvyNE=
 			</data>
 		</dict>
 		<key>StickersViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ECsYIcySBk7/ZaTsubAAbr66ZaB+VG5HmUQf8gZEfFg=
+			SF7UiHqB5/BAKiOJ8PNbp529SyUqiAPolqrq1s7XSYA=
 			</data>
 		</dict>
 	</dict>
