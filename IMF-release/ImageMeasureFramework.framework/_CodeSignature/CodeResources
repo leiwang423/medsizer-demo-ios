@@ -6,11 +6,11 @@
 	<dict>
 		<key>EmojiCollectionViewCell.nib/objects-12.3+.nib</key>
 		<data>
-		pMkqYC3GmIA4moq6FCAJcz/7lQE=
+		OdrfnMZoQrzMqaqBMS7AGDOvPSM=
 		</data>
 		<key>EmojiCollectionViewCell.nib/runtime.nib</key>
 		<data>
-		evhtn1sR8gJkFlQ2JcnWKlD3xXg=
+		j/KfzZhpm6GysKI3xLhsIU6rLq0=
 		</data>
 		<key>Headers/FMDatabase.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/OpenCVWrapper.h</key>
 		<data>
-		nHzG51uydWIC/0PKdgXYXWDKWuk=
+		T3yBZsgufW2e1u+NRM5vqWda+bQ=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/ImageMeasureFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		IDEvgwcLhIzWY1kEUyv6oDrZr+w=
+		IbGgSu2wBuaEF/k6qne0LuUzVRM=
 		</data>
 		<key>Modules/ImageMeasureFramework.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/ImageMeasureFramework.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		IDEvgwcLhIzWY1kEUyv6oDrZr+w=
+		IbGgSu2wBuaEF/k6qne0LuUzVRM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -66,15 +66,15 @@
 		</data>
 		<key>StickerCollectionViewCell.nib/objects-12.3+.nib</key>
 		<data>
-		S1Q+t9/5sKGOJnwWJe3sIlRdm6A=
+		NSQ+1FfP+t+63z9Dt/5+HGAqgX0=
 		</data>
 		<key>StickerCollectionViewCell.nib/runtime.nib</key>
 		<data>
-		MsfOFzDME2clu5Z/P0r7yVHOrBk=
+		RzGvwPhblOi/QquvtQ3M04uBKvk=
 		</data>
 		<key>StickersViewController.nib</key>
 		<data>
-		A/Dmcwtd7ctEaIetMa7Ubk9XEHY=
+		GfG6sofC3H+VCmjNQrykMMU+vFA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -83,14 +83,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iEpM9Uybkuugzj0SRs81PTqk0/Bz6XBMTLyJnd/3Llg=
+			uWhCkGBnptck1tonDrKojXCYO+qyWGgw5M8n1Z/JXLE=
 			</data>
 		</dict>
 		<key>EmojiCollectionViewCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			emhL5glzLKPXDkMz5oFzKBvOsvegWEklM+MPDGYOLFk=
+			nd/XnHtFY6UqOELPTWLRXaDo8s0k+6RtXk5Up6+2s7M=
 			</data>
 		</dict>
 		<key>Headers/FMDatabase.h</key>
@@ -125,7 +125,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UWINB/oRPTYwVyVY+GDWzkeMCsrJDzNaR0Bhk1JiZIc=
+			P0vNJhjCEkq8bfI4cUzzr5iCS/Uj7PLTsFdcDJvHckQ=
 			</data>
 		</dict>
 		<key>Modules/ImageMeasureFramework.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
@@ -153,7 +153,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PRHGj7iX2PkKb1JBJM9z/uBqEFkQpeTPmdOjo4oghSw=
+			1gjSuEVdKtPQUg4RT/YbgIYSh9ChJyx7cbz3SQoRuQU=
 			</data>
 		</dict>
 		<key>Modules/ImageMeasureFramework.swiftmodule/arm64.swiftdoc</key>
@@ -167,7 +167,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PRHGj7iX2PkKb1JBJM9z/uBqEFkQpeTPmdOjo4oghSw=
+			1gjSuEVdKtPQUg4RT/YbgIYSh9ChJyx7cbz3SQoRuQU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -181,21 +181,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eyhmehlYaEls97cXRVUqvNOODyc0cqj4cbmfdnAiRdM=
+			uqu5CJ9pKrUJyJ1AhQG8N5K4TRQG2XgYghA986fRojI=
 			</data>
 		</dict>
 		<key>StickerCollectionViewCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qSy3QgffDvHAhPsKBHAJvnma7nzxsNJ2Qlrv0zplDOo=
+			aBPdKv3Jv2cz4O/4d97AJUKBb9o/A9dDmLPGyuG7Jc8=
 			</data>
 		</dict>
 		<key>StickersViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7h7Qu4rsvbK+JEokEcSZzvGSlMUBIAFo2I3U1/IkRNY=
+			3Sz00piHKe7iRvXSIqmSnBraoPIGBFMFEcmBYVcnA6E=
 			</data>
 		</dict>
 	</dict>
