@@ -478,10 +478,10 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework16RulerManagerView")
 
 
 
-
-
 @interface RulerManagerView (SWIFT_EXTENSION(ImageMeasureFramework)) <PopMenuViewControllerDelegate>
 @end
+
+
 
 @class UITapGestureRecognizer;
 @class UIPanGestureRecognizer;
