@@ -285,13 +285,13 @@ SWIFT_PROTOCOL("_TtP21ImageMeasureFramework20ImageMeasureProtocol_")
 - (void)saveMeasureMentDataWithRawPictureID:(NSString * _Nonnull)rawPictureID pictureID:(NSString * _Nonnull)pictureID data:(NSArray<MeasurementDataStruct *> * _Nonnull)data comment:(NSString * _Nonnull)comment;
 - (void)saveMeasureMentDataWithRawPictureID:(NSString * _Nonnull)rawPictureID pictureID:(NSString * _Nonnull)pictureID json:(NSString * _Nonnull)json comment:(NSString * _Nonnull)comment;
 - (PatientInfo * _Nonnull)getPatientInfo SWIFT_WARN_UNUSED_RESULT;
-- (void)saveMatchedTemplatesWithPictureID:(NSString * _Nonnull)pictureID templates:(NSArray<TemplateMatchInfo *> * _Nonnull)templates;
+- (void)saveMatchedTemplatesWithPictureID:(NSString * _Nonnull)pictureID templates:(NSArray<TemplateMatchInfo *> * _Nonnull)templates json:(NSString * _Nonnull)json;
 - (NSArray<MeasurementItemInfo *> * _Nonnull)getMeasurementItemWithSurgeryType:(NSString * _Nonnull)surgeryType SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
 @interface HomeScreenPatientInfoViewController (SWIFT_EXTENSION(ImageMeasureFramework)) <ImageMeasureProtocol>
-- (void)saveMatchedTemplatesWithPictureID:(NSString * _Nonnull)pictureID templates:(NSArray<TemplateMatchInfo *> * _Nonnull)templates;
+- (void)saveMatchedTemplatesWithPictureID:(NSString * _Nonnull)pictureID templates:(NSArray<TemplateMatchInfo *> * _Nonnull)templates json:(NSString * _Nonnull)json;
 - (void)saveMeasureMentDataWithRawPictureID:(NSString * _Nonnull)rawPictureID pictureID:(NSString * _Nonnull)pictureID data:(NSArray<MeasurementDataStruct *> * _Nonnull)data comment:(NSString * _Nonnull)comment;
 - (void)saveMeasureMentDataWithRawPictureID:(NSString * _Nonnull)rawPictureID pictureID:(NSString * _Nonnull)pictureID json:(NSString * _Nonnull)json comment:(NSString * _Nonnull)comment;
 - (PatientInfo * _Nonnull)getPatientInfo SWIFT_WARN_UNUSED_RESULT;
@@ -371,6 +371,8 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework21MeasurementDataStruct")
 @property (nonatomic, copy) NSArray<NSValue *> * _Nonnull vertics;
 /// 测量位置中心点
 @property (nonatomic) CGPoint center;
+/// 测量视图大小
+@property (nonatomic) CGSize viewSize;
 + (NSString * _Nonnull)encodeWithMeasurementDataList:(NSArray<MeasurementDataStruct *> * _Nonnull)measurementDataList SWIFT_WARN_UNUSED_RESULT;
 + (NSArray<MeasurementDataStruct *> * _Nonnull)decodeWithJsonStr:(NSString * _Nonnull)jsonStr SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -609,10 +611,14 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework17TemplateMatchInfo")
 @property (nonatomic) CGPoint center;
 /// 被测图片放大比率
 @property (nonatomic) CGFloat mainPixelsPerMm;
-- (nonnull instancetype)initWithId:(NSString * _Nonnull)id center:(CGPoint)center mainPixelsPerMm:(CGFloat)mainPixelsPerMm OBJC_DESIGNATED_INITIALIZER;
+/// 测量视图尺寸
+@property (nonatomic) CGSize viewSize;
+/// 模版变换矩阵， 包括平移和旋转
+@property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull transformation;
+- (nonnull instancetype)initWithId:(NSString * _Nonnull)id center:(CGPoint)center mainPixelsPerMm:(CGFloat)mainPixelsPerMm viewSize:(CGSize)viewSize transform:(NSArray<NSNumber *> * _Nonnull)transform OBJC_DESIGNATED_INITIALIZER;
 + (NSString * _Nonnull)encodeWithTemplateMatchInfoList:(NSArray<TemplateMatchInfo *> * _Nonnull)templateMatchInfoList SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)encodeSummaryWithTemplateMatchInfoList:(NSArray<TemplateMatchInfo *> * _Nonnull)templateMatchInfoList SWIFT_WARN_UNUSED_RESULT;
-+ (NSArray<TemplateMatchInfo *> * _Nonnull)decodeWithJsonStr:(NSString * _Nonnull)jsonStr SWIFT_WARN_UNUSED_RESULT;
++ (NSArray<TemplateMatchInfo *> * _Nullable)decodeWithJsonStr:(NSString * _Nonnull)jsonStr SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
