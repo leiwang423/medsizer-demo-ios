@@ -442,6 +442,7 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework16PatientInfoCache")
 SWIFT_CLASS("_TtC21ImageMeasureFramework16RulerManagerView")
 @interface RulerManagerView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutSubviews;
 - (void)drawRect:(CGRect)rect;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end

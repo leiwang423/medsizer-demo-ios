@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/ImageMeasureFramework-Swift.h</key>
 		<data>
-		q90pWfeJo2xVQCoMCEP71y30aGs=
+		t8uNh67P6gH8uEicBcsVhPMC7WE=
 		</data>
 		<key>Headers/ImageMeasureFramework.h</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/ImageMeasureFramework.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		GEQFOZiN3DdUSixVI4YFxaTCLuY=
+		MhNdX/f+Fv3Veg9yjPuNBAwW5/g=
 		</data>
 		<key>Modules/ImageMeasureFramework.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		GEQFOZiN3DdUSixVI4YFxaTCLuY=
+		MhNdX/f+Fv3Veg9yjPuNBAwW5/g=
 		</data>
 		<key>Modules/ImageMeasureFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/ImageMeasureFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		7nVJvT2HNTKRMDpnRUeohGLyiUo=
+		6jD3u4/TS+TiUWuTn8dTL0y0hrM=
 		</data>
 		<key>Modules/ImageMeasureFramework.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/ImageMeasureFramework.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		7nVJvT2HNTKRMDpnRUeohGLyiUo=
+		6jD3u4/TS+TiUWuTn8dTL0y0hrM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -115,7 +115,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Syhtn1ZUHJU/rQUrU005sNo2LVGbpQAs9QTLA4IMae8=
+			eUjVaTQ6PhtI34x9OiDW9sD/XfdMOVENaz21oxkLW4g=
 			</data>
 		</dict>
 		<key>Headers/ImageMeasureFramework.h</key>
@@ -136,14 +136,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ESffnWGNXsYLNOkuQnhlPYr7F3C69+s6N/9N7MIkRTU=
+			YYZuGm7FdZ5oqoWld7clxQhC3NJrVAMW27xfajFH9gQ=
 			</data>
 		</dict>
 		<key>Modules/ImageMeasureFramework.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ESffnWGNXsYLNOkuQnhlPYr7F3C69+s6N/9N7MIkRTU=
+			YYZuGm7FdZ5oqoWld7clxQhC3NJrVAMW27xfajFH9gQ=
 			</data>
 		</dict>
 		<key>Modules/ImageMeasureFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -157,7 +157,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			G+0owCebyaCO+veZD0zxJ9wIZ6sfL4cNOaAlCwExU30=
+			iPFGUwVoHcKYo+BcqUJzmobJxmDMbzsEqJDCR5h+z3g=
 			</data>
 		</dict>
 		<key>Modules/ImageMeasureFramework.swiftmodule/arm64.swiftdoc</key>
@@ -171,7 +171,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			G+0owCebyaCO+veZD0zxJ9wIZ6sfL4cNOaAlCwExU30=
+			iPFGUwVoHcKYo+BcqUJzmobJxmDMbzsEqJDCR5h+z3g=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
