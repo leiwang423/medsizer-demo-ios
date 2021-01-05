@@ -59,6 +59,10 @@ class ViewController: SideMenuTransitionAnimatorViewController {
 
 extension ViewController : ImageMeasureProtocol {
     func saveMatchedTemplates(pictureID: String, templates: [TemplateMatchInfo], json: String) {
+        
+    }
+    
+    func saveMeasureMentData(rawPictureID: String, pictureID: String, data: [MeasurementDataStruct], json: String, comment: String) {
         print("ImageMeasureProtocol::saveMatchedTemplates: ", json)
     }
     

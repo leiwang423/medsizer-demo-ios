@@ -411,7 +411,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = "1.1206_customer-release_internal";
+				CURRENT_PROJECT_VERSION = "2.0104_customer-release_internal";
 				DEVELOPMENT_TEAM = B84DNK4C4R;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -436,6 +436,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lei.hello;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -448,7 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = "1.1206_customer-release_internal";
+				CURRENT_PROJECT_VERSION = "2.0104_customer-release_internal";
 				DEVELOPMENT_TEAM = B84DNK4C4R;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -473,6 +474,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lei.hello;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

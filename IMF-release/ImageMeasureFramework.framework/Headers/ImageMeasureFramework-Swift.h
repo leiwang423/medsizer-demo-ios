@@ -282,8 +282,7 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework35HomeScreenPatientInfoViewController")
 
 SWIFT_PROTOCOL("_TtP21ImageMeasureFramework20ImageMeasureProtocol_")
 @protocol ImageMeasureProtocol
-- (void)saveMeasureMentDataWithRawPictureID:(NSString * _Nonnull)rawPictureID pictureID:(NSString * _Nonnull)pictureID data:(NSArray<MeasurementDataStruct *> * _Nonnull)data comment:(NSString * _Nonnull)comment;
-- (void)saveMeasureMentDataWithRawPictureID:(NSString * _Nonnull)rawPictureID pictureID:(NSString * _Nonnull)pictureID json:(NSString * _Nonnull)json comment:(NSString * _Nonnull)comment;
+- (void)saveMeasureMentDataWithRawPictureID:(NSString * _Nonnull)rawPictureID pictureID:(NSString * _Nonnull)pictureID data:(NSArray<MeasurementDataStruct *> * _Nonnull)data json:(NSString * _Nonnull)json comment:(NSString * _Nonnull)comment;
 - (PatientInfo * _Nonnull)getPatientInfo SWIFT_WARN_UNUSED_RESULT;
 - (void)saveMatchedTemplatesWithPictureID:(NSString * _Nonnull)pictureID templates:(NSArray<TemplateMatchInfo *> * _Nonnull)templates json:(NSString * _Nonnull)json;
 - (NSArray<MeasurementItemInfo *> * _Nonnull)getMeasurementItemWithSurgeryType:(NSString * _Nonnull)surgeryType SWIFT_WARN_UNUSED_RESULT;
@@ -292,8 +291,7 @@ SWIFT_PROTOCOL("_TtP21ImageMeasureFramework20ImageMeasureProtocol_")
 
 @interface HomeScreenPatientInfoViewController (SWIFT_EXTENSION(ImageMeasureFramework)) <ImageMeasureProtocol>
 - (void)saveMatchedTemplatesWithPictureID:(NSString * _Nonnull)pictureID templates:(NSArray<TemplateMatchInfo *> * _Nonnull)templates json:(NSString * _Nonnull)json;
-- (void)saveMeasureMentDataWithRawPictureID:(NSString * _Nonnull)rawPictureID pictureID:(NSString * _Nonnull)pictureID data:(NSArray<MeasurementDataStruct *> * _Nonnull)data comment:(NSString * _Nonnull)comment;
-- (void)saveMeasureMentDataWithRawPictureID:(NSString * _Nonnull)rawPictureID pictureID:(NSString * _Nonnull)pictureID json:(NSString * _Nonnull)json comment:(NSString * _Nonnull)comment;
+- (void)saveMeasureMentDataWithRawPictureID:(NSString * _Nonnull)rawPictureID pictureID:(NSString * _Nonnull)pictureID data:(NSArray<MeasurementDataStruct *> * _Nonnull)data json:(NSString * _Nonnull)json comment:(NSString * _Nonnull)comment;
 - (PatientInfo * _Nonnull)getPatientInfo SWIFT_WARN_UNUSED_RESULT;
 - (NSArray<MeasurementItemInfo *> * _Nonnull)getMeasurementItemWithSurgeryType:(NSString * _Nonnull)surgeryType SWIFT_WARN_UNUSED_RESULT;
 @end
@@ -371,8 +369,6 @@ SWIFT_CLASS("_TtC21ImageMeasureFramework21MeasurementDataStruct")
 @property (nonatomic, copy) NSArray<NSValue *> * _Nonnull vertics;
 /// 测量位置中心点
 @property (nonatomic) CGPoint center;
-/// 测量视图大小
-@property (nonatomic) CGSize viewSize;
 + (NSString * _Nonnull)encodeWithMeasurementDataList:(NSArray<MeasurementDataStruct *> * _Nonnull)measurementDataList SWIFT_WARN_UNUSED_RESULT;
 + (NSArray<MeasurementDataStruct *> * _Nonnull)decodeWithJsonStr:(NSString * _Nonnull)jsonStr SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
