@@ -58,27 +58,13 @@ class ViewController: SideMenuTransitionAnimatorViewController {
 }
 
 extension ViewController : ImageMeasureProtocol {
-    func saveMatchedTemplates(pictureID: String, templates: [TemplateMatchInfo], json: String) {
-        
-    }
     
-    func saveMeasureMentData(rawPictureID: String, pictureID: String, data: [MeasurementDataStruct], json: String, comment: String) {
+    func saveMeasureMentData(rawPictureID: String, pictureID: String, data: MeasurementData, json: String, comment: String) {
         print("ImageMeasureProtocol::saveMatchedTemplates: ", json)
     }
     
     func getMeasurementItem(surgeryType: String) -> [MeasurementItemInfo] {
         return []
-    }
-    func saveMeasureMentData(rawPictureID: String, pictureID: String, json: String, comment: String) {
-    }
-    
-    // received measurement data list from IMF
-    func saveMeasureMentData(rawPictureID: String, pictureID: String, data: [MeasurementDataStruct], comment: String) {
-        print("ImageMeasureProtocol::saveMeasureMentData")
-    }
-    
-    func saveMatchedTemplates(pictureID: String, templates: [TemplateMatchInfo]) {
-        print("ImageMeasureProtocol::saveMatchedTemplates")
     }
     
   // provide patient info to IMF
