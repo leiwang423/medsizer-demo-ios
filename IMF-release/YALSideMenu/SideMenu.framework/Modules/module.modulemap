@@ -6,6 +6,6 @@ framework module SideMenu {
 }
 
 module SideMenu.Swift {
-    header "SideMenu-Swift.h"
-    requires objc
+  header "SideMenu-Swift.h"
+  requires objc
 }

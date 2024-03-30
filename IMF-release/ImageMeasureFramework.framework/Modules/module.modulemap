@@ -6,6 +6,6 @@ framework module ImageMeasureFramework {
 }
 
 module ImageMeasureFramework.Swift {
-    header "ImageMeasureFramework-Swift.h"
-    requires objc
+  header "ImageMeasureFramework-Swift.h"
+  requires objc
 }

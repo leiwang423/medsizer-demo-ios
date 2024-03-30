@@ -6,6 +6,6 @@ framework module Gallery {
 }
 
 module Gallery.Swift {
-    header "Gallery-Swift.h"
-    requires objc
+  header "Gallery-Swift.h"
+  requires objc
 }
